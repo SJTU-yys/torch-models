@@ -7,7 +7,6 @@ local ReLU = cudnn.ReLU
 local Max = nn.SpatialMaxPooling
 local SBatchNorm = nn.SpatialBatchNormalization
 
-
 -- Note: 1. Every inception is followed by a 1*1 conv layer for filter-expansion, which is not followed by activation 
 --          according to the paper
 --       2. There are not bn layer on top of the addition in residue modules because of the large GPU memory consumption
